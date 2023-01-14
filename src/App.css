@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+body
+{
+  background-color :lightblue;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sign-up-container
+{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: white;
+  gap:0.5rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  margin-top: 3rem;
+}
+input{
+  background-color: #e2e8f0;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
+}
+label
+{
+  font-weight: bold;
+  color: black;
+}
+.sign-up-button
+{
+  padding: 0.6rem 3rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color:#0ea5e9;
+  border: none;
   color: white;
+  margin-top: 0.4rem;
+}
+.captcha-image
+{
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap:0.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.captchaText
+{
+   background-image: url('https://ik.imagekit.io/1a4v4n07o/captcha_1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673533540868');
+    height: 3rem;
+    width: 13rem;
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    letter-spacing: 13px ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
