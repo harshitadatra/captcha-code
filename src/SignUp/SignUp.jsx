@@ -17,9 +17,7 @@ export const SignUp = () => {
 
     setSignUPData((signUpData) => ({ ...signUpData, [name]: value }));
   }
-  function signUpHandler() {
-    console.log(signUpData);
-  }
+
   function captchaGenerator() {
     const possibleText =
       "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -43,6 +41,7 @@ export const SignUp = () => {
   }
   useEffect(() => {
     captchaSetter();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -99,8 +98,6 @@ export const SignUp = () => {
           placeholder="Enter captcha"
           onChange={(e) => changeHandler(e)}
         />
-       
-
         <button className="sign-up-button" onClick={signUpHandler}>
           Sign up
         </button>
